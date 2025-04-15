@@ -2,7 +2,9 @@
 name = "mlms"
 version = "0.0.1"
 description = ""
-authors = ["Kennette Basco <kmaddela@nyit.edu>"]
+authors = [
+    {name = "kenny",email = "97374837+kankenny@users.noreply.github.com"}
+]
 license = { text = "MIT License" }
 requires-python = ">=3.11,<3.13"
 
