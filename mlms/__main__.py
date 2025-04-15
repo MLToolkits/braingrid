@@ -9,4 +9,5 @@ if __package__ is None and not hasattr(sys, "frozen"):
 import mlms
 
 if __name__ == "__main__":
+    print("HELLO WORLD")
     mlms.main()
