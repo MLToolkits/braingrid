@@ -1,18 +1,18 @@
 [tool.poetry]
 name = "mlms"
-version = "0.2.1"
+version = "0.0.1"
 description = ""
 authors = ["Kennette Basco <kmaddela@nyit.edu>"]
 license = "MIT License"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.1.1"
-black = ">=25.1.0,<26.0.0"
-pre-commit = "^3.7.0"
-flake8 = "^7.0.0"
+pytest = ">=8.1,<8.2"
+black = ">=24.3,<25.0"
+pre-commit = ">=3.7,<3.8"
+flake8 = ">=7.0,<7.1"
 
 [build-system]
 requires = ["poetry-core>=1.9.0"]
@@ -35,7 +35,7 @@ exclude = '''
 application = "application:main"
 
 [tool.commitizen]
-version = "0.2.1"
+version = "0.0.1"
 tag_format = "v$version"
 version_files = [
   "pyproject.toml:version",
