@@ -1,18 +1,22 @@
-[tool.poetry]
+[project]
 name = "mlms"
 version = "0.0.1"
 description = ""
 authors = ["Kennette Basco <kmaddela@nyit.edu>"]
-license = "MIT License"
+license = { text = "MIT License" }
+requires-python = ">=3.11,<3.13"
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.13"
+[project.dependencies]
+# No runtime dependencies specified
 
-[tool.poetry.dev-dependencies]
+[project.optional-dependencies.dev]
 pytest = ">=8.1,<8.2"
 black = ">=24.3,<25.0"
 pre-commit = ">=3.7,<3.8"
 flake8 = ">=7.0,<7.1"
+
+[project.scripts]
+application = "application:main"
 
 [build-system]
 requires = ["poetry-core>=1.9.0"]
@@ -30,9 +34,6 @@ exclude = '''
   | \.mypy_cache
 )\
 '''
-
-[tool.poetry.scripts]
-application = "application:main"
 
 [tool.commitizen]
 version = "0.0.1"
