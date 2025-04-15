@@ -21,14 +21,15 @@ ________________________________________________________________________________
 
 
 STEPS:
----CI---
+
+--- CI (Commit / Development Flow) ---
 1. git checkout -b some_branch
 2. git add .
 3. cz c
-4. git push
+4. git push -u origin some_branch
 
----CD---
-1.  git add .
-2.  cz c
-3.  cz bump --increment patch
-4.  git push && git push --tags
+--- CD (Release / Tag + Publish Flow) ---
+1. git add .
+2. cz c
+3. cz bump               # or: cz bump --increment patch|minor|major
+4. git push && git push --tags
