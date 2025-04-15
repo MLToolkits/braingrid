@@ -17,3 +17,18 @@ LOW
 1. Update README.md
 
 _______________________________________________________________________________________________
+
+
+
+STEPS:
+---CI---
+1. git checkout -b some_branch
+2. git add .
+3. cz c
+4. git push
+
+---CD---
+1.  git add .
+2.  cz c
+3.  cz bump --increment patch
+4.  git push && git push --tags
