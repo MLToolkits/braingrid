@@ -1,5 +1,5 @@
 [project]
-name = "mlms"
+name = "braingrid"
 version = "0.0.6"
 description = ""
 authors = [
@@ -11,7 +11,7 @@ requires-python = ">=3.11,<3.13"
 dependencies = []
 
 [project.scripts]
-mlms = "mlms:main"
+braingrid = "braingrid:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
@@ -41,5 +41,5 @@ version = "0.0.6"
 tag_format = "v$version"
 version_files = [
   "pyproject.toml:version",
-  "mlms/__version__.py"
+  "braingrid/__version__.py"
 ]

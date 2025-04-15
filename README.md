@@ -23,11 +23,11 @@ git branch <branch_name>
 git checkout <branch_name>
 ```
 
-- Replace all occurances of `mlms` with the name of your package
+- Replace all occurances of `braingrid` with the name of your package
   - `pyproject.toml`
   - `.github/workflows/deploy.yml`
-  - `mlms/__main__py`
-  - `mlms` - directory
+  - `braingrid/__main__py`
+  - `braingrid` - directory
   - (tip) In VScode use `Ctrl+Shift+F`
 - Check the tests are passing before commiting
 

@@ -60,7 +60,7 @@ jobs:
           body_path: ".github/release_template.md"
           draft: true
           files: |
-            dist/mlms-${{ env.PROJECT_VERSION }}-py3-none-any.whl
-            dist/mlms-${{ env.PROJECT_VERSION }}.tar.gz
+            dist/braingrid-${{ env.PROJECT_VERSION }}-py3-none-any.whl
+            dist/braingrid-${{ env.PROJECT_VERSION }}.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

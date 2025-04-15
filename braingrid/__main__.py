@@ -6,8 +6,8 @@ if __package__ is None and not hasattr(sys, "frozen"):
     path = os.path.realpath(os.path.abspath(__file__))
     sys.path.insert(0, os.path.dirname(os.path.dirname(path)))
 
-import mlms
+import braingrid
 
 if __name__ == "__main__":
     print("HELLO WORLD")
-    mlms.main()
+    braingrid.main()
