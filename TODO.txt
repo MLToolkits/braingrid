@@ -35,4 +35,3 @@ STEPS:
 4. cz c                          # Create a conventional commit for any changes
 5. cz bump                       # Bumps the version and creates a changelog (or use: `cz bump --increment patch|minor|major`)
 6. git push && git push --tags    # Push the commit and the version tag
-
