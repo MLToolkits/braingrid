@@ -1,2 +1,2 @@
 def test_1():
-    assert True and not False
+    assert True and not False and True
