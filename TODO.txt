@@ -26,7 +26,7 @@ STEPS:
 1. git checkout -b some_branch   # Create a new feature or fix branch
 2. git add .                     # Stage all changes
 3. cz c                          # Create a conventional commit (Commitizen)
-4. git push -u origin some_branch # Push branch and open a PR to `main`
+4. git push -u origin some_branch # Push branch and open a PR to `main` then merge
 
 # --- CD (Release / Tag + Publish Flow) ---
 1. git checkout main             # Switch to `main` branch
