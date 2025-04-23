@@ -22,14 +22,16 @@ ________________________________________________________________________________
 
 STEPS:
 
---- CI (Commit / Development Flow) ---
-1. git checkout -b some_branch
-2. git add .
-3. cz c
-4. git push -u origin some_branch
+# --- CI (Commit / Development Flow) ---
+1. git checkout -b some_branch   # Create a new feature or fix branch
+2. git add .                     # Stage all changes
+3. cz c                          # Create a conventional commit (Commitizen)
+4. git push -u origin some_branch # Push branch and open a PR to `main` then merge
 
---- CD (Release / Tag + Publish Flow) ---
-1. git add .
-2. cz c
-3. cz bump               # or: cz bump --increment patch|minor|major
-4. git push && git push --tags
+# --- CD (Release / Tag + Publish Flow) ---
+1. git checkout main             # Switch to `main` branch
+2. git pull origin main          # Make sure you're up-to-date with `main`
+3. git add .                     # Stage any final changes (if needed)
+4. cz c                          # Create a conventional commit for any changes
+5. cz bump                       # Bumps the version and creates a changelog (or use: `cz bump --increment patch|minor|major`)
+6. git push && git push --tags    # Push the commit and the version tag
