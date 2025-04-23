@@ -9,4 +9,3 @@ def brain_grid():
 if __name__ == "__main__":
     hello_world()
     brain_grid()
-    brain_grid()
