@@ -3,7 +3,7 @@ def hello_world():
 
 
 def brain_grid():
-    print(f"{'->'*40}{':)'.center(40)}{'<-'*40}")
+    print(f"{'-'*40}>{':)'.center(40)}<{'-'*40}")
 
 
 if __name__ == "__main__":
